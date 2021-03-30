@@ -6,6 +6,7 @@ int main()
 
 printf("qual a distancia : ");
 scanf("%f", &dist);
+
 printf("quanto tempo : ");
 scanf("%f", &tempo);
 
