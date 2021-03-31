@@ -2,21 +2,20 @@
 int main()
 {
 
- float dist,tempo, qtd_gasolina, vel, consumo ;
+ float sal, percent, aumento, sal_antigo, sal_novo ;
 
-printf("qual a distancia : ");
-scanf("%f", &dist);
-printf("quanto tempo : ");
-scanf("%f", &tempo);
+printf("qual a salario : ");
+scanf("%f", &sal);
+printf("qual percentual?  : ");
+scanf("%f", &percent);
 
-printf("quanta gasolina : ");
-scanf("%f", &qtd_gasolina);
+sal_antigo = sal ;
 
-vel = dist/ tempo ;
+aumento = sal * (percent / 100)  ;
 
-consumo = dist / qtd_gasolina ;
+sal_novo = sal_antigo + aumento ;
 
- printf(" velocidade media foi %.1f km/h\n", vel);
- printf(" consumo medio foi %.1f k/l\n", consumo);
-
+ printf(" O salario antigo era R$ %.2f \n", sal_antigo);
+ printf(" O percetual de Aumento era de  %.1f %%\n", percent);
+ printf(" O novo salario e de R$ %.2f %\n", sal_novo);
 }
